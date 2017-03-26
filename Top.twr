@@ -1,0 +1,522 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+E:\XilinxISE\14.7\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 2L
+-n 3 -fastpaths -xml Top.twx Top.ncd -o Top.twr Top.pcf -ucf Constraint.ucf
+
+Design file:              Top.ncd
+Physical constraint file: Top.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clear
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    0.420(F)|      FAST  |    5.459(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    0.490(F)|      FAST  |    5.152(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    0.229(F)|      FAST  |    5.622(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    0.512(F)|      FAST  |    5.158(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    0.329(F)|      FAST  |    5.606(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    0.258(F)|      FAST  |    5.523(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    0.492(F)|      FAST  |    5.298(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    0.462(F)|      FAST  |    5.262(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    0.746(F)|      FAST  |    5.743(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    0.953(F)|      FAST  |    5.438(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    0.587(F)|      FAST  |    5.818(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    0.868(F)|      FAST  |    5.437(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    0.758(F)|      FAST  |    5.857(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    0.677(F)|      FAST  |    5.824(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    0.919(F)|      FAST  |    5.544(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    0.854(F)|      FAST  |    5.568(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    1.146(F)|      FAST  |    5.681(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.178(F)|      FAST  |    5.246(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    0.915(F)|      FAST  |    5.686(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.185(F)|      FAST  |    5.245(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    0.965(F)|      FAST  |    5.717(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.074(F)|      FAST  |    5.676(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.213(F)|      FAST  |    5.448(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.188(F)|      FAST  |    5.405(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    0.546(F)|      FAST  |    5.723(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    0.774(F)|      FAST  |    5.317(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    0.409(F)|      FAST  |    5.790(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    0.684(F)|      FAST  |    5.353(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    0.576(F)|      FAST  |    5.755(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    0.499(F)|      FAST  |    5.741(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    0.741(F)|      FAST  |    5.459(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    0.671(F)|      FAST  |    5.460(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock Load
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    1.188(F)|      FAST  |    4.269(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.128(F)|      FAST  |    4.224(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.065(F)|      FAST  |    4.328(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.211(F)|      FAST  |    4.122(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.154(F)|      FAST  |    4.314(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.135(F)|      FAST  |    4.135(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.180(F)|      FAST  |    4.264(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.322(F)|      FAST  |    3.940(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    1.514(F)|      FAST  |    4.553(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.591(F)|      FAST  |    4.510(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.423(F)|      FAST  |    4.524(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.567(F)|      FAST  |    4.401(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.583(F)|      FAST  |    4.565(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.554(F)|      FAST  |    4.436(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.607(F)|      FAST  |    4.510(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.714(F)|      FAST  |    4.246(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    1.914(F)|      FAST  |    4.491(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.816(F)|      FAST  |    4.318(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.751(F)|      FAST  |    4.392(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.884(F)|      FAST  |    4.209(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.790(F)|      FAST  |    4.425(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.951(F)|      FAST  |    4.288(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.901(F)|      FAST  |    4.414(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.048(F)|      FAST  |    4.083(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    1.314(F)|      FAST  |    4.533(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.412(F)|      FAST  |    4.389(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.245(F)|      FAST  |    4.496(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.383(F)|      FAST  |    4.317(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.401(F)|      FAST  |    4.463(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.376(F)|      FAST  |    4.353(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.429(F)|      FAST  |    4.425(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.531(F)|      FAST  |    4.138(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock SW<6>
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    1.382(F)|      FAST  |    3.761(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.289(F)|      FAST  |    3.779(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.312(F)|      FAST  |    3.691(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.344(F)|      FAST  |    3.735(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.291(F)|      FAST  |    3.907(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.113(F)|      FAST  |    4.020(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.434(F)|      FAST  |    3.645(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.457(F)|      FAST  |    3.523(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    1.708(F)|      FAST  |    4.045(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.752(F)|      FAST  |    4.065(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.670(F)|      FAST  |    3.887(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.700(F)|      FAST  |    4.014(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.720(F)|      FAST  |    4.158(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.532(F)|      FAST  |    4.321(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.861(F)|      FAST  |    3.891(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.849(F)|      FAST  |    3.829(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    2.176(F)|      SLOW  |    3.983(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.977(F)|      FAST  |    3.873(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    2.068(F)|      SLOW  |    3.755(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    2.029(F)|      SLOW  |    3.822(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.927(F)|      FAST  |    4.018(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.940(F)|      SLOW  |    4.173(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.252(F)|      SLOW  |    3.795(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.294(F)|      SLOW  |    3.666(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    1.508(F)|      FAST  |    4.025(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.573(F)|      FAST  |    3.944(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.492(F)|      FAST  |    3.859(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.516(F)|      FAST  |    3.930(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.538(F)|      FAST  |    4.056(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.354(F)|      FAST  |    4.238(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.683(F)|      FAST  |    3.806(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.666(F)|      FAST  |    3.721(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock SWRam<0>
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    1.272(F)|      FAST  |    3.706(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.325(F)|      FAST  |    3.466(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.147(F)|      FAST  |    3.758(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.333(F)|      FAST  |    3.483(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.178(F)|      FAST  |    3.857(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.164(F)|      FAST  |    3.679(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.371(F)|      FAST  |    3.510(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.453(F)|      FAST  |    3.289(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    1.629(F)|      SLOW  |    3.990(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.919(F)|      SLOW  |    3.752(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.505(F)|      FAST  |    3.954(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.726(F)|      SLOW  |    3.762(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.607(F)|      FAST  |    4.108(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.603(F)|      SLOW  |    3.980(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.911(F)|      SLOW  |    3.756(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.954(F)|      SLOW  |    3.595(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    2.200(F)|      SLOW  |    3.928(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    2.216(F)|      SLOW  |    3.560(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.989(F)|      SLOW  |    3.822(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    2.217(F)|      SLOW  |    3.570(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.910(F)|      SLOW  |    3.968(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    2.209(F)|      SLOW  |    3.832(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.341(F)|      SLOW  |    3.660(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.465(F)|      SLOW  |    3.432(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    1.398(F)|      FAST  |    3.970(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.609(F)|      FAST  |    3.631(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.327(F)|      FAST  |    3.926(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.505(F)|      FAST  |    3.678(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.425(F)|      FAST  |    4.006(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.405(F)|      FAST  |    3.897(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.620(F)|      FAST  |    3.671(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.662(F)|      FAST  |    3.487(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock SWRam<1>
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    1.444(F)|      FAST  |    3.449(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.491(F)|      FAST  |    3.214(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.268(F)|      FAST  |    3.593(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.387(F)|      FAST  |    3.434(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.237(F)|      FAST  |    3.803(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.301(F)|      FAST  |    3.465(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.487(F)|      FAST  |    3.350(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.533(F)|      FAST  |    3.190(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    1.851(F)|      SLOW  |    3.733(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    2.134(F)|      SLOW  |    3.500(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.628(F)|      SLOW  |    3.789(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.770(F)|      SLOW  |    3.713(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.666(F)|      FAST  |    4.054(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.791(F)|      SLOW  |    3.766(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.049(F)|      SLOW  |    3.596(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.047(F)|      SLOW  |    3.496(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    2.422(F)|      SLOW  |    3.671(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    2.431(F)|      SLOW  |    3.308(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    2.131(F)|      SLOW  |    3.657(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    2.261(F)|      SLOW  |    3.521(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.958(F)|      SLOW  |    3.914(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    2.397(F)|      SLOW  |    3.618(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.479(F)|      SLOW  |    3.500(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.558(F)|      SLOW  |    3.333(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    1.570(F)|      FAST  |    3.713(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.775(F)|      FAST  |    3.379(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.448(F)|      FAST  |    3.761(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.559(F)|      FAST  |    3.629(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.484(F)|      FAST  |    3.952(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.542(F)|      FAST  |    3.683(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.736(F)|      FAST  |    3.511(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.742(F)|      FAST  |    3.388(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock SWRam<2>
+------------+------------+------------+------------+------------+------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                        | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)       | Phase  |
+------------+------------+------------+------------+------------+------------------------+--------+
+SW<4>       |    1.357(F)|      FAST  |    3.589(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.460(F)|      FAST  |    3.251(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.227(F)|      FAST  |    3.644(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.420(F)|      FAST  |    3.364(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.265(F)|      FAST  |    3.738(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.060(F)|      FAST  |    3.900(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.451(F)|      FAST  |    3.396(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.349(F)|      FAST  |    3.510(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<5>       |    1.725(F)|      SLOW  |    3.873(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    2.097(F)|      SLOW  |    3.537(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.585(F)|      FAST  |    3.840(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.823(F)|      SLOW  |    3.643(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.694(F)|      FAST  |    3.989(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.479(F)|      FAST  |    4.201(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.004(F)|      SLOW  |    3.642(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.759(F)|      SLOW  |    3.816(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<7>       |    2.296(F)|      SLOW  |    3.811(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    2.394(F)|      SLOW  |    3.345(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    2.082(F)|      SLOW  |    3.708(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    2.314(F)|      SLOW  |    3.451(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    2.007(F)|      SLOW  |    3.849(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    2.014(F)|      SLOW  |    4.053(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    2.434(F)|      SLOW  |    3.546(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    2.270(F)|      SLOW  |    3.653(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+SW<8>       |    1.483(F)|      FAST  |    3.853(F)|      SLOW  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+            |    1.744(F)|      FAST  |    3.416(F)|      SLOW  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+            |    1.407(F)|      FAST  |    3.812(F)|      SLOW  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+            |    1.592(F)|      FAST  |    3.559(F)|      SLOW  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+            |    1.512(F)|      FAST  |    3.887(F)|      SLOW  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+            |    1.301(F)|      FAST  |    4.118(F)|      SLOW  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+            |    1.700(F)|      FAST  |    3.557(F)|      SLOW  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+            |    1.558(F)|      FAST  |    3.708(F)|      SLOW  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+------------+------------+------------+------------+------------------------+--------+
+
+Setup/Hold to clock clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW<0>       |    0.633(R)|      FAST  |    2.244(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<1>       |    0.675(R)|      FAST  |    1.967(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<2>       |    0.612(R)|      FAST  |    2.246(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<3>       |    0.363(R)|      FAST  |    2.530(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<4>       |    0.686(R)|      FAST  |    2.362(R)|      SLOW  |clk_BUFGP         |   0.000|
+SW<5>       |    0.496(R)|      FAST  |    2.474(R)|      SLOW  |clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clear to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        12.403(F)|      SLOW  |         5.710(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        11.957(F)|      SLOW  |         5.470(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        12.431(F)|      SLOW  |         5.714(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        12.075(F)|      SLOW  |         5.541(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        12.502(F)|      SLOW  |         5.750(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        12.338(F)|      SLOW  |         5.650(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        12.366(F)|      SLOW  |         5.688(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        12.451(F)|      SLOW  |         5.764(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock Load to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        11.213(F)|      SLOW  |         4.942(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        11.029(F)|      SLOW  |         4.832(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        11.137(F)|      SLOW  |         4.878(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        11.039(F)|      SLOW  |         4.842(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        11.210(F)|      SLOW  |         4.925(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        10.950(F)|      SLOW  |         4.773(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        11.332(F)|      SLOW  |         5.000(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        11.129(F)|      SLOW  |         4.904(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock SW<6> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        10.705(F)|      SLOW  |         4.748(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        10.584(F)|      SLOW  |         4.671(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        10.500(F)|      SLOW  |         4.631(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        10.652(F)|      SLOW  |         4.709(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        10.803(F)|      SLOW  |         4.788(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        10.835(F)|      SLOW  |         4.795(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        10.713(F)|      SLOW  |         4.746(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        10.712(F)|      SLOW  |         4.769(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock SWRam<0> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        10.650(F)|      SLOW  |         4.858(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        10.271(F)|      SLOW  |         4.635(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        10.567(F)|      SLOW  |         4.796(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        10.400(F)|      SLOW  |         4.720(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        10.753(F)|      SLOW  |         4.901(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        10.494(F)|      SLOW  |         4.744(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        10.578(F)|      SLOW  |         4.809(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        10.478(F)|      SLOW  |         4.773(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock SWRam<1> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        10.393(F)|      SLOW  |         4.686(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        10.019(F)|      SLOW  |         4.469(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        10.402(F)|      SLOW  |         4.675(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        10.351(F)|      SLOW  |         4.666(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        10.699(F)|      SLOW  |         4.842(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        10.280(F)|      SLOW  |         4.607(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        10.418(F)|      SLOW  |         4.693(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        10.379(F)|      SLOW  |         4.693(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock SWRam<2> to Pad
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                        | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)       | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+LED<0>      |        10.533(F)|      SLOW  |         4.773(F)|      FAST  |g/RD_Load_MUX_315_o_BUFG|   0.000|
+LED<1>      |        10.056(F)|      SLOW  |         4.500(F)|      FAST  |g/RD_Load_MUX_377_o_BUFG|   0.000|
+LED<2>      |        10.453(F)|      SLOW  |         4.716(F)|      FAST  |g/RD_Load_MUX_441_o_BUFG|   0.000|
+LED<3>      |        10.281(F)|      SLOW  |         4.633(F)|      FAST  |g/RD_Load_MUX_505_o_BUFG|   0.000|
+LED<4>      |        10.634(F)|      SLOW  |         4.814(F)|      FAST  |g/RD_Load_MUX_569_o_BUFG|   0.000|
+LED<5>      |        10.715(F)|      SLOW  |         4.848(F)|      FAST  |g/RD_Load_MUX_633_o_BUFG|   0.000|
+LED<6>      |        10.464(F)|      SLOW  |         4.729(F)|      FAST  |g/RD_Load_MUX_697_o_BUFG|   0.000|
+LED<7>      |        10.699(F)|      SLOW  |         4.877(F)|      FAST  |g/RD_Load_MUX_761_o_BUFG|   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------+--------+
+
+Clock clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+AN<0>       |        11.016(R)|      SLOW  |         4.600(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<1>       |        10.928(R)|      SLOW  |         4.574(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<2>       |        11.119(R)|      SLOW  |         4.561(R)|      FAST  |clk_BUFGP         |   0.000|
+AN<3>       |        10.981(R)|      SLOW  |         4.561(R)|      FAST  |clk_BUFGP         |   0.000|
+Buzzer      |        12.539(R)|      SLOW  |         5.237(R)|      FAST  |clk_BUFGP         |   0.000|
+LEDBelow    |        13.291(R)|      SLOW  |         5.174(R)|      FAST  |clk_BUFGP         |   0.000|
+Overflow    |        17.351(R)|      SLOW  |         4.860(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<0>  |       110.590(R)|      SLOW  |         5.118(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<1>  |       110.536(R)|      SLOW  |         5.017(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<2>  |       110.435(R)|      SLOW  |         5.007(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<3>  |       110.521(R)|      SLOW  |         4.995(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<4>  |       109.816(R)|      SLOW  |         4.948(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<5>  |       110.388(R)|      SLOW  |         5.109(R)|      FAST  |clk_BUFGP         |   0.000|
+Segment<6>  |       109.561(R)|      SLOW  |         4.807(R)|      FAST  |clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clear
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |   -0.239|    1.784|    0.139|    0.139|
+Load           |         |    1.784|         |         |
+SW<6>          |   -0.812|    1.784|   -0.628|   -0.628|
+SWRam<0>       |   -1.345|    1.784|         |         |
+SWRam<1>       |   -1.336|    1.784|         |         |
+SWRam<2>       |   -1.407|    1.784|         |         |
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Load
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |         |         |    0.917|    0.917|
+SW<6>          |         |         |    0.232|    0.232|
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |    0.353|    1.784|    1.011|    1.011|
+Load           |         |    1.784|         |         |
+SW<6>          |   -0.220|    1.784|    0.367|    0.367|
+SWRam<0>       |   -0.753|    1.784|         |         |
+SWRam<1>       |   -0.744|    1.784|         |         |
+SWRam<2>       |   -0.815|    1.784|         |         |
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SWRam<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |         |         |    0.971|    0.971|
+SW<6>          |         |         |    0.363|    0.363|
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SWRam<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |         |         |    1.169|    1.169|
+SW<6>          |         |         |    0.443|    0.443|
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SWRam<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |         |         |    1.132|    1.132|
+SW<6>          |         |         |    0.283|    0.283|
+clk            |         |         |   98.578|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clear          |    6.731|         |         |         |
+Load           |    1.523|    1.523|         |         |
+SW<6>          |    6.731|    0.317|         |         |
+clk            |    2.073|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW<4>          |Segment<0>     |   12.572|
+SW<4>          |Segment<1>     |   12.133|
+SW<4>          |Segment<2>     |   12.046|
+SW<4>          |Segment<3>     |   12.545|
+SW<4>          |Segment<4>     |   11.661|
+SW<4>          |Segment<5>     |   12.370|
+SW<4>          |Segment<6>     |   11.884|
+SW<5>          |Segment<0>     |   13.909|
+SW<5>          |Segment<1>     |   13.855|
+SW<5>          |Segment<2>     |   13.754|
+SW<5>          |Segment<3>     |   13.840|
+SW<5>          |Segment<4>     |   13.135|
+SW<5>          |Segment<5>     |   13.707|
+SW<5>          |Segment<6>     |   12.880|
+SW<7>          |Buzzer         |    9.156|
+SW<7>          |LEDBelow       |    8.555|
+SW<7>          |Overflow       |    8.386|
+SW<7>          |Segment<0>     |   14.337|
+SW<7>          |Segment<1>     |   14.283|
+SW<7>          |Segment<2>     |   14.182|
+SW<7>          |Segment<3>     |   14.268|
+SW<7>          |Segment<4>     |   13.563|
+SW<7>          |Segment<5>     |   14.135|
+SW<7>          |Segment<6>     |   13.308|
+SW<8>          |Buzzer         |    8.938|
+SW<8>          |LEDBelow       |    8.325|
+SW<8>          |Overflow       |    8.342|
+SW<8>          |Segment<0>     |   13.413|
+SW<8>          |Segment<1>     |   13.359|
+SW<8>          |Segment<2>     |   13.258|
+SW<8>          |Segment<3>     |   13.344|
+SW<8>          |Segment<4>     |   12.639|
+SW<8>          |Segment<5>     |   13.211|
+SW<8>          |Segment<6>     |   12.384|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Jan 05 11:58:02 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 584 MB
+
+
+

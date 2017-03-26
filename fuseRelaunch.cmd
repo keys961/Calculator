@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/hp/Desktop/FinalProject3/ram_isim_beh.exe" -prj "C:/Users/hp/Desktop/FinalProject3/ram_beh.prj" "work.ram" "work.glbl" 

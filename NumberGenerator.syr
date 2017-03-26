@@ -1,0 +1,531 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: NumberGenerator.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "NumberGenerator.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "NumberGenerator"
+Output Format                      : NGC
+Target Device                      : xc7k160t-2L-ffg676
+
+---- Source Options
+Top Module Name                    : NumberGenerator
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "Z:\FinalProject\NumberGenerator.v" into library work
+Parsing module <NumberGenerator>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <NumberGenerator>.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 49: Signal <numplus1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 50: Signal <numplus10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 51: Signal <numplus100> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 52: Signal <numplus1000> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 54: Signal <numA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 55: Signal <numA> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 60: Signal <numplus1> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 61: Signal <numplus10> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 62: Signal <numplus100> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 63: Signal <numplus1000> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 65: Signal <numB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "Z:\FinalProject\NumberGenerator.v" Line 66: Signal <numB> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <NumberGenerator>.
+    Related source file is "Z:\FinalProject\NumberGenerator.v".
+    Found 32-bit subtractor for signal <numA[31]_GND_1_o_sub_25_OUT> created at line 55.
+    Found 32-bit subtractor for signal <numB[31]_GND_1_o_sub_34_OUT> created at line 66.
+    Found 32-bit adder for signal <numA[31]_GND_1_o_add_1_OUT> created at line 37.
+    Found 32-bit adder for signal <numB[31]_GND_1_o_add_2_OUT> created at line 37.
+    Found 32-bit adder for signal <numA[31]_GND_1_o_add_5_OUT> created at line 38.
+    Found 32-bit adder for signal <numB[31]_GND_1_o_add_6_OUT> created at line 38.
+    Found 32-bit adder for signal <numA[31]_GND_1_o_add_9_OUT> created at line 39.
+    Found 32-bit adder for signal <numB[31]_GND_1_o_add_10_OUT> created at line 39.
+    Found 32-bit adder for signal <numA[31]_GND_1_o_add_13_OUT> created at line 40.
+    Found 32-bit adder for signal <numB[31]_GND_1_o_add_14_OUT> created at line 40.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numB<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <numA<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 32-bit comparator greater for signal <GND_1_o_numA[31]_LessThan_24_o> created at line 54
+    Found 32-bit comparator greater for signal <GND_1_o_numB[31]_LessThan_33_o> created at line 65
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred  64 Latch(s).
+	inferred   2 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <NumberGenerator> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 2
+# Latches                                              : 64
+ 1-bit latch                                           : 64
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 6
+ 32-bit 2-to-1 multiplexer                             : 6
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 6
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 2
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 6
+ 32-bit 2-to-1 multiplexer                             : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <NumberGenerator> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block NumberGenerator, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : NumberGenerator.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 834
+#      GND                         : 1
+#      INV                         : 46
+#      LUT1                        : 12
+#      LUT2                        : 57
+#      LUT3                        : 190
+#      LUT4                        : 1
+#      LUT5                        : 103
+#      LUT6                        : 61
+#      MUXCY                       : 184
+#      VCC                         : 1
+#      XORCY                       : 178
+# FlipFlops/Latches                : 64
+#      LDE                         : 32
+#      LDE_1                       : 32
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 69
+#      IBUF                        : 5
+#      OBUF                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-2l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              64  out of  202800     0%  
+ Number of Slice LUTs:                  470  out of  101400     0%  
+    Number used as Logic:               470  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    470
+   Number with an unused Flip Flop:     406  out of    470    86%  
+   Number with an unused LUT:             0  out of    470     0%  
+   Number of fully used LUT-FF pairs:    64  out of    470    13%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                  69  out of    400    17%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SW<4>                              | IBUF+BUFG              | 64    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.078ns (Maximum Frequency: 196.928MHz)
+   Minimum input arrival time before clock: 2.423ns
+   Maximum output required time after clock: 0.712ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SW<4>'
+  Clock period: 5.078ns (frequency: 196.928MHz)
+  Total number of paths / destination ports: 18382 / 128
+-------------------------------------------------------------------------
+Delay:               2.539ns (Levels of Logic = 34)
+  Source:            numB_1 (LATCH)
+  Destination:       numA_31 (LATCH)
+  Source Clock:      SW<4> falling
+  Destination Clock: SW<4> rising
+
+  Data Path: numB_1 to numA_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE:G->Q              5   0.330   0.428  numB_1 (numB_1)
+     LUT3:I1->O            1   0.043   0.000  Mmux_numplus10_rs_lut<1> (Mmux_numplus10_rs_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  Mmux_numplus10_rs_cy<1> (Mmux_numplus10_rs_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<2> (Mmux_numplus10_rs_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<3> (Mmux_numplus10_rs_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<4> (Mmux_numplus10_rs_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<5> (Mmux_numplus10_rs_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<6> (Mmux_numplus10_rs_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<7> (Mmux_numplus10_rs_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<8> (Mmux_numplus10_rs_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<9> (Mmux_numplus10_rs_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<10> (Mmux_numplus10_rs_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<11> (Mmux_numplus10_rs_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<12> (Mmux_numplus10_rs_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<13> (Mmux_numplus10_rs_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<14> (Mmux_numplus10_rs_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<15> (Mmux_numplus10_rs_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<16> (Mmux_numplus10_rs_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<17> (Mmux_numplus10_rs_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<18> (Mmux_numplus10_rs_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<19> (Mmux_numplus10_rs_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<20> (Mmux_numplus10_rs_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<21> (Mmux_numplus10_rs_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<22> (Mmux_numplus10_rs_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<23> (Mmux_numplus10_rs_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<24> (Mmux_numplus10_rs_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<25> (Mmux_numplus10_rs_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<26> (Mmux_numplus10_rs_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<27> (Mmux_numplus10_rs_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<28> (Mmux_numplus10_rs_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<29> (Mmux_numplus10_rs_cy<29>)
+     MUXCY:CI->O           0   0.013   0.000  Mmux_numplus10_rs_cy<30> (Mmux_numplus10_rs_cy<30>)
+     XORCY:CI->O           2   0.262   0.355  Mmux_numplus10_rs_xor<31> (numplus10<31>)
+     LUT5:I4->O            1   0.043   0.405  Mmux_SW[3]_numA[31]_mux_25_OUT251_SW0 (N116)
+     LUT6:I4->O            1   0.043   0.000  Mmux_SW[3]_numA[31]_mux_25_OUT251 (SW[3]_numA[31]_mux_25_OUT<31>)
+     LDE_1:D                  -0.034          numA_31
+    ----------------------------------------
+    Total                      2.539ns (1.350ns logic, 1.188ns route)
+                                       (53.2% logic, 46.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SW<4>'
+  Total number of paths / destination ports: 4851 / 128
+-------------------------------------------------------------------------
+Offset:              2.423ns (Levels of Logic = 35)
+  Source:            SW<4> (PAD)
+  Destination:       numA_31 (LATCH)
+  Destination Clock: SW<4> rising
+
+  Data Path: SW<4> to numA_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           125   0.000   0.642  SW_4_IBUF (SW_4_IBUF)
+     LUT3:I0->O            1   0.043   0.000  Mmux_numplus10_rs_lut<1> (Mmux_numplus10_rs_lut<1>)
+     MUXCY:S->O            1   0.238   0.000  Mmux_numplus10_rs_cy<1> (Mmux_numplus10_rs_cy<1>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<2> (Mmux_numplus10_rs_cy<2>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<3> (Mmux_numplus10_rs_cy<3>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<4> (Mmux_numplus10_rs_cy<4>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<5> (Mmux_numplus10_rs_cy<5>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<6> (Mmux_numplus10_rs_cy<6>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<7> (Mmux_numplus10_rs_cy<7>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<8> (Mmux_numplus10_rs_cy<8>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<9> (Mmux_numplus10_rs_cy<9>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<10> (Mmux_numplus10_rs_cy<10>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<11> (Mmux_numplus10_rs_cy<11>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<12> (Mmux_numplus10_rs_cy<12>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<13> (Mmux_numplus10_rs_cy<13>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<14> (Mmux_numplus10_rs_cy<14>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<15> (Mmux_numplus10_rs_cy<15>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<16> (Mmux_numplus10_rs_cy<16>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<17> (Mmux_numplus10_rs_cy<17>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<18> (Mmux_numplus10_rs_cy<18>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<19> (Mmux_numplus10_rs_cy<19>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<20> (Mmux_numplus10_rs_cy<20>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<21> (Mmux_numplus10_rs_cy<21>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<22> (Mmux_numplus10_rs_cy<22>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<23> (Mmux_numplus10_rs_cy<23>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<24> (Mmux_numplus10_rs_cy<24>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<25> (Mmux_numplus10_rs_cy<25>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<26> (Mmux_numplus10_rs_cy<26>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<27> (Mmux_numplus10_rs_cy<27>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<28> (Mmux_numplus10_rs_cy<28>)
+     MUXCY:CI->O           1   0.013   0.000  Mmux_numplus10_rs_cy<29> (Mmux_numplus10_rs_cy<29>)
+     MUXCY:CI->O           0   0.013   0.000  Mmux_numplus10_rs_cy<30> (Mmux_numplus10_rs_cy<30>)
+     XORCY:CI->O           2   0.262   0.355  Mmux_numplus10_rs_xor<31> (numplus10<31>)
+     LUT5:I4->O            1   0.043   0.405  Mmux_SW[3]_numA[31]_mux_25_OUT251_SW0 (N116)
+     LUT6:I4->O            1   0.043   0.000  Mmux_SW[3]_numA[31]_mux_25_OUT251 (SW[3]_numA[31]_mux_25_OUT<31>)
+     LDE_1:D                  -0.034          numA_31
+    ----------------------------------------
+    Total                      2.423ns (1.020ns logic, 1.403ns route)
+                                       (42.1% logic, 57.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SW<4>'
+  Total number of paths / destination ports: 64 / 64
+-------------------------------------------------------------------------
+Offset:              0.712ns (Levels of Logic = 1)
+  Source:            numA_13 (LATCH)
+  Destination:       numA<13> (PAD)
+  Source Clock:      SW<4> rising
+
+  Data Path: numA_13 to numA<13>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDE_1:G->Q            8   0.334   0.378  numA_13 (numA_13)
+     OBUF:I->O                 0.000          numA_13_OBUF (numA<13>)
+    ----------------------------------------
+    Total                      0.712ns (0.334ns logic, 0.378ns route)
+                                       (46.9% logic, 53.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock SW<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW<4>          |    2.727|    2.539|    2.723|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.70 secs
+ 
+--> 
+
+Total memory usage is 376804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   76 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

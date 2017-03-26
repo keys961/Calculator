@@ -1,0 +1,131 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DisplaySync.vf
+// /___/   /\     Timestamp : 11/16/2016 20:42:55
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command:
+//Design Name: DisplaySync
+//Device: kintex7
+//Purpose:
+//    Sync logic
+//    
+//
+`timescale 1ns / 1ps
+
+module Mux4to1_MUSER_DisplaySync(I0, 
+                                 I1, 
+                                 I2, 
+                                 I3, 
+                                 s, 
+                                 o);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input [1:0] s;
+   output o;
+   
+   wire D0;
+   wire D1;
+   wire D2;
+   wire D3;
+   wire XLXN_80;
+   wire XLXN_108;
+   wire XLXN_149;
+   wire XLXN_150;
+   wire XLXN_151;
+   wire XLXN_152;
+   
+   AND2  XLXI_1 (.I0(XLXN_108), 
+                .I1(XLXN_80), 
+                .O(D0));
+   AND2  XLXI_2 (.I0(s[0]), 
+                .I1(XLXN_80), 
+                .O(D1));
+   AND2  XLXI_3 (.I0(s[1]), 
+                .I1(XLXN_108), 
+                .O(D2));
+   AND2  XLXI_4 (.I0(s[1]), 
+                .I1(s[0]), 
+                .O(D3));
+   INV  XLXI_5 (.I(s[0]), 
+               .O(XLXN_108));
+   INV  XLXI_6 (.I(s[1]), 
+               .O(XLXN_80));
+   AND2  XLXI_7 (.I0(I0), 
+                .I1(D0), 
+                .O(XLXN_149));
+   AND2  XLXI_8 (.I0(I1), 
+                .I1(D1), 
+                .O(XLXN_150));
+   AND2  XLXI_43 (.I0(I2), 
+                 .I1(D2), 
+                 .O(XLXN_151));
+   AND2  XLXI_44 (.I0(I3), 
+                 .I1(D3), 
+                 .O(XLXN_152));
+   OR4  XLXI_45 (.I0(XLXN_152), 
+                .I1(XLXN_151), 
+                .I2(XLXN_150), 
+                .I3(XLXN_149), 
+                .O(o));
+endmodule
+`timescale 1ns / 1ps
+
+module DisplaySync(Hexs, 
+                   LES, 
+                   point, 
+                   Scan, 
+                   AN, 
+                   HEX, 
+                   LE, 
+                   p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] HEX;
+   output LE;
+   output p;
+   
+   wire V0;
+   wire V1;
+   
+   Mux4to14b  XLXI_25 (.I0(Hexs[3:0]), 
+                      .I1(Hexs[7:4]), 
+                      .I2(Hexs[11:8]), 
+                      .I3(Hexs[15:12]), 
+                      .s(Scan[1:0]), 
+                      .o(HEX[3:0]));
+   Mux4to1_MUSER_DisplaySync  XLXI_28 (.I0(point[0]), 
+                                      .I1(point[1]), 
+                                      .I2(point[2]), 
+                                      .I3(point[3]), 
+                                      .s(Scan[1:0]), 
+                                      .o(p));
+   Mux4to1_MUSER_DisplaySync  XLXI_29 (.I0(LES[0]), 
+                                      .I1(LES[1]), 
+                                      .I2(LES[2]), 
+                                      .I3(LES[3]), 
+                                      .s(Scan[1:0]), 
+                                      .o(LE));
+   Mux4to14b  XLXI_30 (.I0({V1, V1, V1, V0}), 
+                      .I1({V1, V1, V0, V1}), 
+                      .I2({V1, V0, V1, V1}), 
+                      .I3({V0, V1, V1, V1}), 
+                      .s(Scan[1:0]), 
+                      .o(AN[3:0]));
+   VCC  XLXI_31 (.P(V1));
+   GND  XLXI_32 (.G(V0));
+endmodule

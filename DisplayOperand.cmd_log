@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "Z:/FinalProject/DisplayOperand.xst" -ofn "Z:/FinalProject/DisplayOperand.syr" 
+xst -intstyle ise -ifn "Z:/FinalProject/DisplayOperand.xst" -ofn "Z:/FinalProject/DisplayOperand.syr" 

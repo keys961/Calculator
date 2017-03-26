@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj FinalProject -o C:/Users/hp/Desktop/FinalProject3/SRAM.tfi -lib work C:/Users/hp/Desktop/FinalProject3//SRAM.v -module SRAM -template D:/ise147/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

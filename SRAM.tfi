@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+SRAM instance_name (
+    .clk(clk), 
+    .RD(RD), 
+    .Load(Load), 
+    .Clear(Clear), 
+    .Address(Address), 
+    .dataIn(dataIn), 
+    .dataOut(dataOut), 
+    .led(led)
+    );
+
+
